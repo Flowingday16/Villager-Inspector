@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "villagerinspector",
+  "version": "1.0.0",
+  "name": "Villager Inspector",
+  "description": "Diagnose villager status: trading restock cooldown, breeding requirements, workstation & bed POIs, panic & health directly on HUD for Minecraft 1.21.11.",
+  "authors": [
+    "Flowingday16"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/villagerinspector/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.villagerinspector.VillagerInspectorClient"
+    ],
+    "modmenu": [
+      "com.villagerinspector.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "villagerinspector.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=1.21.11",
+    "java": ">=21"
+  }
+}
